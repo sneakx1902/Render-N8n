@@ -1,9 +1,8 @@
 services:
   - type: web
     name: n8n
-    env: image
-    image:
-      imagePath: docker.io/n8nio/n8n:latest
+    env: docker
+    repo: https://github.com/n8n-io/n8n.git
     plan: free
     region: oregon # Or your preferred region
     envVars:
